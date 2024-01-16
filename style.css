@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700,500,300");
+html, body {
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.text {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.blocks .row1, .blocks .row2 {
+  display: flex;
+}
+.blocks .row1 .block, .blocks .row2 .block {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.blocks .row1 .block1, .blocks .row2 .block1 {
+  border: 1px solid #FF5353;
+  transition: 0.1s;
+}
+.blocks .row1 .block1:hover, .blocks .row2 .block1:hover {
+  box-shadow: 0 0 20px #FF5353;
+}
+.blocks .row1 .block1:active, .blocks .row1 .block1.active, .blocks .row2 .block1:active, .blocks .row2 .block1.active {
+  background-color: #FF5353;
+  box-shadow: 0 0 20px #FF5353;
+}
+.blocks .row1 .block2, .blocks .row2 .block2 {
+  border: 1px solid #FFC429;
+  transition: 0.1s;
+}
+.blocks .row1 .block2:hover, .blocks .row2 .block2:hover {
+  box-shadow: 0 0 20px #FFC429;
+}
+.blocks .row1 .block2:active, .blocks .row1 .block2.active, .blocks .row2 .block2:active, .blocks .row2 .block2.active {
+  background-color: #FFC429;
+  box-shadow: 0 0 20px #FFC429;
+}
+.blocks .row1 .block3, .blocks .row2 .block3 {
+  border: 1px solid #5980C1;
+  transition: 0.1s;
+}
+.blocks .row1 .block3:hover, .blocks .row2 .block3:hover {
+  box-shadow: 0 0 20px #5980C1;
+}
+.blocks .row1 .block3:active, .blocks .row1 .block3.active, .blocks .row2 .block3:active, .blocks .row2 .block3.active {
+  background-color: #5980C1;
+  box-shadow: 0 0 20px #5980C1;
+}
+.blocks .row1 .block4, .blocks .row2 .block4 {
+  border: 1px solid #FBE9B7;
+  transition: 0.1s;
+}
+.blocks .row1 .block4:hover, .blocks .row2 .block4:hover {
+  box-shadow: 0 0 20px #FBE9B7;
+}
+.blocks .row1 .block4:active, .blocks .row1 .block4.active, .blocks .row2 .block4:active, .blocks .row2 .block4.active {
+  background-color: #FBE9B7;
+  box-shadow: 0 0 20px #FBE9B7;
+}
+
+.test {
+  background-color: #fff;
+}
+
+.levelShow {
+  color: #FF5353;
+  letter-spacing: 1pt;
+  font-size: 13pt;
+  font-weight: 500;
+}
+
+.satus {
+  display: flex;
+}
+.satus .circle {
+  width: 8px;
+  height: 8px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+.satus .circle.fullcircle {
+  background-color: #fff;
+}
+.satus .circle.correct {
+  background-color: #5980C1;
+  border: 1px solid #5980C1;
+}
+.satus .circle.wrong {
+  background-color: #FF5353;
+  border: 1px solid #FF5353;
+}
+
+.disable {
+  pointer-events: none;
+}
